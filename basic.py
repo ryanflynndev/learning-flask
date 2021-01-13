@@ -10,5 +10,9 @@ def index():
 def home():
     return "<h1>Home Page</h1>"
 
+@app.route('/puppy/<name>')
+def puppy(name):
+    return f"<h1>This is a page for {name} </h1>"
+
 if __name__ == '__main__':
     app.run()
