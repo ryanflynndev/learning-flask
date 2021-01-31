@@ -10,9 +10,9 @@ def index():
 def home():
     return "<h1>Home Page</h1>"
 
-@app.route('/puppy/<name>')
-def puppy(name):
-    return f"<h1>This is a page for {name.upper()} </h1>"
+@app.route('/person/<name>')
+def person(name):
+    return f"<h1>This is a page for {name[100]} </h1>"
 
 if __name__ == '__main__':
     app.run(debug=True)
